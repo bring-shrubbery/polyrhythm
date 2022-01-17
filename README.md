@@ -20,6 +20,8 @@ Below you can see the pseudocode for the algorithm in Python.
 
 ```python
 def getPolyrhythm(config: { items: { tempo: float, beats: int }[], sample_rate: int }) -> int[][]:
+    config.sample_rate = config.sample_rate or 1
+    if len(config.items) == 0: throw "Need to have some items"
     # TODO
 ```
 
