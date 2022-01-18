@@ -8,8 +8,8 @@ Polyrhythm generation algorithm written in Swift
 
 Components of the polyrhythms:
 
-- N number of simultaneous rhythms with each having:
-  - It's own T_i tempo. 
+- `N` number of simultaneous rhythms with each having:
+  - It's own `T_i` tempo. 
   - It's own number of beats per measure (time signature).
 - A way to measure time. In this case we use two (based on preference):
   - Sample time based - returns specific integer that represents the sample time, given sample rate.
