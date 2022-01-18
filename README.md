@@ -19,10 +19,36 @@ Components of the polyrhythms:
 Below you can see the pseudocode for the algorithm in Python.
 
 ```python
-def getPolyrhythm(config: { items: { tempo: float, beats: int }[], sample_rate: int }) -> int[][]:
-    config.sample_rate = config.sample_rate or 1
-    if len(config.items) == 0: throw "Need to have some items"
-    # TODO
+# Pseudocode, does not actually run.
+def getPolyrhythm(config: { beats: int[] }) -> int[][]:
+  if len(config.beats) <= 1: throw "Need to have some beats"
+
+  LCM = least_common_multiple(config.beats) # least common multiple of all the beats
+
+  samples = []
+  for beat in config.beats:
+    # Find the index at which the beat will occur.
+    divisible_index = LCM / beat
+    beat_times = [1 if index & divisible_index else 0 for index in [0]*LCM]
+    samples.append(beat_times)
+
+  return samples
+  # Samples now look like this for beats=[2, 3]:
+  # [
+  #   [1, 0, 0, 1, 0, 0],
+  #   [1, 0, 1, 0, 1, 0]
+  # ]
+
+def getPolyrhythmSampleTimes(samples: int[][], sample_rate: float): -> float[][]:
+  pass
+  # TODO: Finish the func
+```
+
+```bash
+$ python main.py -b 2,3
+
+[1, 0, 0, 1, 0, 0]
+[1, 0, 1, 0, 1, 0]
 ```
 
 ## License
