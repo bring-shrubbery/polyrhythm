@@ -31,7 +31,7 @@ def getPolyrhythm(beats: int[]) -> int[][]:
   for beat in config.beats:
     # Find the index at which the beat will occur.
     divisible_index = LCM / beat
-    beat_times = [1 if index & divisible_index else 0 for index in [0]*LCM]
+    beat_times = [1 if index % divisible_index == 0 else 0 for index in [0]*LCM]
     samples.append(beat_times)
 
   return samples
