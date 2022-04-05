@@ -31,10 +31,9 @@ mod tests {
 
     match result {
       Some(res) => {
-        println!("{:?}", res);
         assert_eq!(res, vec![vec![1, 0, 1, 0, 1, 0], vec![1, 0, 0, 1, 0, 0]]);
       }
-      None => panic!("Should return value!"),
+      None => panic!("Must return a value here!"),
     }
   }
 }
