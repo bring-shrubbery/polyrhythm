@@ -1,7 +1,16 @@
 [package]
-name = "polyrhythm-rust"
+name = "polyrhythm"
+description = "Utilities for generating polyrhythms."
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
+license = "Mozilla Public License Version 2.0"
+homepage = "https://github.com/bring-shrubbery/polyrhythm"
+documentation = "https://github.com/bring-shrubbery/polyrhythm/tree/main/polyrhythm-rust"
+repository = "https://github.com/bring-shrubbery/polyrhythm"
+readme = "README.md"
+authors = ["Antoni Silvestrovic <antoni.silvestrovic@gmail.com>"]
+keywords = ["polyrhythm"]
+categories = ["music"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
