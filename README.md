@@ -5,7 +5,6 @@ Polyrhythm generation algorithm written in every language I need.
 ## Motivation
 
 - [rythmic (App Store)](https://apps.apple.com/app/rythmic/id1515876711)
-- [rythmic (Github)](https://github.com/quassum/rythmic-ios)
 
 ## Algorithm
 
