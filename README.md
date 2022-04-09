@@ -25,7 +25,7 @@ Below you can see the pseudocode for the algorithm in Python.
 def getPolyrhythm(beats: int[]) -> int[][]:
   if len(config.beats) <= 1: throw "Need to have some beats"
 
-  LCM = least_common_multiple(config.beats) # least common multiple of all the beats
+  LCM = least_common_multiple(config.beats) # least common multiple (LCM) of all the beats
 
   samples = []
   for beat in config.beats:
@@ -55,6 +55,24 @@ $ python main.py -b 2,3
 [1, 0, 1, 0, 1, 0]
 ```
 
+## Installation
+
+### Swift
+
+Add following URL to Swift Package Manager in Xcode:
+
+```
+https://github.com/bring-shrubbery/polyrhythm/tree/main/polyrhythm-rust
+```
+
+### Rust
+
+Add polyrhythm crate to your `Cargo.toml` file:
+
+```toml
+polyrhythm = "x.x.x"
+```
+
 ## License
 
-[You can't use it without my permission. Email here to get a license](antoni.silvestrovic@gmail.com)
+[Mozilla Public License 2.0](https://github.com/bring-shrubbery/polyrhythm/blob/main/LICENSE)
