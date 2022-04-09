@@ -9,8 +9,7 @@ documentation = "https://github.com/bring-shrubbery/polyrhythm/tree/main/polyrhy
 repository = "https://github.com/bring-shrubbery/polyrhythm"
 readme = "README.md"
 authors = ["Antoni Silvestrovic <antoni.silvestrovic@gmail.com>"]
-keywords = ["polyrhythm"]
-categories = ["music"]
+keywords = ["polyrhythm", "music"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
