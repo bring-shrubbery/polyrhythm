@@ -1,6 +1,6 @@
-# Polyrhythm.yall
+# Polyrhythm
 
-Polyrhythm generation algorithm written in every language I needed.
+Polyrhythm generation algorithm written in every language I need.
 
 ## Motivation
 
@@ -57,4 +57,4 @@ $ python main.py -b 2,3
 
 ## License
 
-[Email here to get a license](antoni.silvestrovic@gmail.com)
+[You can't use it without my permission. Email here to get a license](antoni.silvestrovic@gmail.com)
